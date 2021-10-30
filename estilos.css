@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Cards*/
+.container-card{
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12.9rem, 1fr));
+	gap: 0.5rem;
+	width: 95%;
+	margin: auto;
+
+}
+.title-cards{
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	margin-top: 40px;
+	text-align: center;
+	color: #ffffff;
+	background: radial-gradient(circle, rgb(105, 221, 236) 0%, rgb(4, 0, 255) 46%, rgb(0, 255, 76) 110%);
+	position: relative;
+	transform: translateY(-3%);
+	transition: all 180ms;	
+}
+.card{
+	position: center;
+	width: 100%;
+	margin: 5px;
+	border-radius: 8px;
+	overflow: visible;
+	background:rgb(255, 255, 255);
+	box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.267);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-6%);
+}
+.card img{
+	width: 100%;
+	height: auto;
+}
+.card .contenido-card01{
+	padding: 9px;
+	text-align: center;
+	font-size: 14px;
+}
+.card .contenido-card01 h3{
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 4px;
+	color: #ffffff;
+	background: #c5310cc5;
+	border-radius: 5px 0px 7px 0px;
+}
+.card .contenido-card01 h1{
+	text-align: left;
+	line-height: 1.5;
+	color: #686868;
+	font-size: 17px;
+	margin-bottom: 7px;
+}
+.card .contenido-card01 h2{
+	text-align:  center;
+	background: #0c81c5fb;
+	width: 35%;
+	line-height: 1.5;
+	color: #ffffff;
+	border-radius: 4px;
+	font-size: 20px;
+}
+.card .contenido-card01 h3{
+	line-height: 2.0;
+	text-align: center;
+	font-size: 19px;
+	color: #ffffff;
+	background: #b10b0b;
+	border-radius: 70px 0px 70px 0px;
+
+}
+.card .contenido-card01 h4{
+	text-align: left;
+	margin-bottom: 4px;
+	line-height: 1.5;
+	color: #b9ce00;
+	font-size: 25px;
+}
+.card .contenido-card01 h5{
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 9px;
+	color: #8b0007c7;
+}
+.card .contenido-card01 h6{
+	text-align: left;
+	line-height: 2.5;
+	color: #000000;
+	font-size: 23px;
+
+}
+.card .contenido-card01 a{
+	display: inline-block;
+	padding: 7px;
+	width: 90%;
+	font-size: 19px;
+	margin-top: 1px;
+	text-decoration: none;
+	color: #292828fb;
+	border: 3px solid #040c24fb;
+	border-radius: 6px;
+	transition: all 400ms ease;
+	margin-bottom: 2px;
+}
+.card .contenido-card01 a:hover{
+	background: #0c81c5fb;
+	color: rgba(255, 255, 255, 0.829);
+	
+}
+.card2:hover{
+	transform : scale(2);
+	-moz-transform : scale(2); /* Firefox */
+	-webkit-transform : scale(2); /* Chrome - Safari */
+	-o-transform : scale(2); /* Opera */
+	-ms-transform : scale(2); /* IE9 */
+	transition: all 1800ms;	
+	border-radius: 7px 7px 18px 100%;
+}
+.colorescon{
+	display: inline-block;
+	width: 30%;
+	transition: all 1800ms;	
+
+}
+.colorescon:hover{
+	transform : scale(2);
+	-moz-transform : scale(4); /* Firefox */
+	-webkit-transform : scale(4); /* Chrome - Safari */
+	-o-transform : scale(4); /* Opera */
+	-ms-transform : scale(4); /* IE9 */
+}
+/* Submenu*/
+.menu > li{
+position: relative;
+width: 100%;
+display: inline-block;
+color: #fffdfd00;
+
+
+}
+.submenu{
+background: #ffffff;
+width: 100%;
+position: absolute;
+visibility: hidden;
+opacity: 0;	
+transform: translateY(-100%);
+}
+
+.menu li:hover .submenu{
+visibility: visible;
+opacity: 1;
+transition: 1.9s ease;	
+/*Fin-Cards*/
+}
+@media only screen and (min-width:150px) and (max-width:900px){
+	.card{
+		position: center;
+		width: 100%;
+		margin: 5px;
+		border-radius: 8px;
+		overflow: visible;
+		background:rgb(255, 255, 255);
+		box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.267);
+		transition: all 400ms ease-out;
+		cursor: default;
+
+	}
+	.card:hover{
+		box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+		transform: translateY(-6%);	
+	}
+
+	.container-card{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(5.9rem, 1fr));
+		gap: 0.5rem;
+		width: 90%;
+
+	}
+	.card img{
+		width: 100%;
+		height: auto;
+		justify-content: center;
+	}
+
+	.colores{
+		width: 100%;
+		height: auto;
+		justify-content: center;
+
+	
+	}
+	.card .contenido-card01{
+		padding: 10px;
+		text-align: center;
+		font-size: 10px;
+	}
+	.card .contenido-card01 h1{
+		text-align: left;
+		line-height: 1.5;
+		color: #686868;
+		font-size: 10px;
+		margin-bottom: 7px;
+		
+	}
+	.card .contenido-card01 h2{
+		text-align: center;
+		background: #0c81c5fb;
+		width: 50%;
+		line-height: 1.5;
+		color: #ffffff;
+		border-radius: 4px;
+		font-size: 10px;
+	}
+	.card .contenido-card01 h3{
+		line-height: 1.3;
+		text-align: center;
+		font-size: 17px;
+		color: #ffffff;
+		background: #c50c0c;
+		border-radius: 70px 0px 70px 0px;
+	}
+	.card .contenido-card01 h4{
+		text-align: left;
+		line-height: 1.5;
+		color: #c5db00;
+		font-size: 17px;
+	}
+	.card .contenido-card01 h5{
+		text-align: left;
+		font-size: 14px;
+		margin-bottom: 4px;
+		color: #8b0007c7;
+	}
+	.card .contenido-card01 h6{
+		text-align: left;
+		line-height: 1.2;
+		color: #3b3b3b;
+		font-size: 12px;
+
+
+	}
+	.card .contenido-card01 a{
+		display: inline-block;
+		box-shadow: 3px 3px 6px rgba(8, 8, 8, 0.473);
+		padding: 4px;
+		width: 90%;
+		font-size: 12px;
+		margin-top: 3px;
+		text-decoration: none;
+		color: #292828fb;
+		border: 3px solid #040c24fb;
+		border-radius: 6px;
+		transition: all 400ms ease;
+		margin-bottom: 2px;
+    }
+	.card2:hover{
+		position: relative;
+		background: #0c81c5c5;
+		transform : scale(2);
+		-moz-transform : scale(2); /* Firefox */
+		-webkit-transform : scale(2); /* Chrome - Safari */
+		-o-transform : scale(2); /* Opera */
+		-ms-transform : scale(2); /* IE9 */
+		transition: 1.5s ease;	
+		border-radius: 7px 7px 18px 100%;
+	}
+	.colorescon{
+		display: inline-block;
+		width: 30%;
+		transition: all 1800ms;	
+	
+	}
+	.colorescon:hover{
+		transform : scale(2);
+		-moz-transform : scale(4); /* Firefox */
+		-webkit-transform : scale(4); /* Chrome - Safari */
+		-o-transform : scale(4); /* Opera */
+		-ms-transform : scale(4); /* IE9 */
+
+	
+	}
+	/* Submenu*/
+.menu > li{
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	color: #fffdfd00;
+	
+
+}
+.submenu{
+	background: #ffffff;
+	width: 100%;
+	position: absolute;
+	visibility: collapse;
+	opacity: 0;	
+	transform: translateY(-100%);	
+
+
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+	transition: 1.9s ease;	
+}	
+
+}
+/*Fin-Cards*/
